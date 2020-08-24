@@ -1,0 +1,13 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_product_image_backend_mrp_user,product.image.backend user,model_product_image_backend,mrp.group_mrp_user,1,0,0,0
+access_product_image_backend_mrp_manager,product.image.backend mrp_manager,model_product_image_backend,mrp.group_mrp_manager,1,1,1,1
+access_product_image_backend_stock_user,product.image.backend stock_user,model_product_image_backend,stock.group_stock_user,1,0,0,0
+access_product_image_backend_stock_manager,product.image.backend stock_manager,model_product_image_backend,stock.group_stock_manager,1,1,1,1
+access_product_image_backend_employee,product.image.backend employee,model_product_image_backend,base.group_user,1,0,0,0
+access_product_image_backend_manager,product.image.backend manager,model_product_image_backend,base.group_system,1,1,1,1
+access_category_image_backend_mrp_user,product.image.category user,model_product_image_category,mrp.group_mrp_user,1,0,0,0
+access_category_image_backend_mrp_manager,product.image.category mrp_manager,model_product_image_category,mrp.group_mrp_manager,1,1,1,1
+access_category_image_backend_stock_user,product.image.category stock_user,model_product_image_category,stock.group_stock_user,1,0,0,0
+access_category_image_backend_stock_manager,product.image.category stock_manager,model_product_image_category,stock.group_stock_manager,1,1,1,1
+access_category_image_backend_employee,product.image.category employee,model_product_image_category,base.group_user,1,0,0,0
+access_category_image_backend_manager,product.image.category manager,model_product_image_category,base.group_system,1,1,1,1
