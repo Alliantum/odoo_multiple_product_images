@@ -1,6 +1,6 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
-#	* os_alveus_multiple_images
+#	* Multiple_Images
 #
 msgid ""
 msgstr ""
@@ -15,265 +15,265 @@ msgstr ""
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: \n"
 
-#. module: os_alveus_multiple_images
-#: model_terms:ir.ui.view,arch_db:os_alveus_multiple_images.product_cat_image_backend_form
+#. module: Multiple_Images
+#: model_terms:ir.ui.view,arch_db:Multiple_Images.product_cat_image_backend_form
 msgid "<span class=\"o_stat_text\">Images</span>"
 msgstr ""
 
-#. module: os_alveus_multiple_images
-#: model_terms:ir.ui.view,arch_db:os_alveus_multiple_images.product_cat_image_backend_form
+#. module: Multiple_Images
+#: model_terms:ir.ui.view,arch_db:Multiple_Images.product_cat_image_backend_form
 msgid "<span class=\"o_stat_text\">Templates</span>"
 msgstr ""
 
-#. module: os_alveus_multiple_images
-#: model_terms:ir.ui.view,arch_db:os_alveus_multiple_images.product_cat_image_backend_form
+#. module: Multiple_Images
+#: model_terms:ir.ui.view,arch_db:Multiple_Images.product_cat_image_backend_form
 msgid "<span class=\"o_stat_text\">Variants</span>"
 msgstr ""
 
-#. module: os_alveus_multiple_images
-#: model:ir.model,name:os_alveus_multiple_images.model_product_image_category
+#. module: Multiple_Images
+#: model:ir.model,name:Multiple_Images.model_product_image_category
 msgid "An image category"
 msgstr ""
 
-#. module: os_alveus_multiple_images
-#: model:ir.model.fields,field_description:os_alveus_multiple_images.field_product_image_backend__category_ids
-#: model_terms:ir.ui.view,arch_db:os_alveus_multiple_images.product_image_backend_form_view
+#. module: Multiple_Images
+#: model:ir.model.fields,field_description:Multiple_Images.field_product_image_backend__category_ids
+#: model_terms:ir.ui.view,arch_db:Multiple_Images.product_image_backend_form_view
 msgid "Categories"
 msgstr ""
 
-#. module: os_alveus_multiple_images
-#: model:ir.actions.server,name:os_alveus_multiple_images.clean_orphans_images_cron_ir_actions_server
-#: model:ir.cron,cron_name:os_alveus_multiple_images.clean_orphans_images_cron
-#: model:ir.cron,name:os_alveus_multiple_images.clean_orphans_images_cron
+#. module: Multiple_Images
+#: model:ir.actions.server,name:Multiple_Images.clean_orphans_images_cron_ir_actions_server
+#: model:ir.cron,cron_name:Multiple_Images.clean_orphans_images_cron
+#: model:ir.cron,name:Multiple_Images.clean_orphans_images_cron
 msgid "Clean Orphan Images"
 msgstr ""
 
-#. module: os_alveus_multiple_images
-#: model:ir.model.fields,field_description:os_alveus_multiple_images.field_product_image_category__color
+#. module: Multiple_Images
+#: model:ir.model.fields,field_description:Multiple_Images.field_product_image_category__color
 msgid "Color"
 msgstr ""
 
-#. module: os_alveus_multiple_images
-#: model:ir.model.fields,field_description:os_alveus_multiple_images.field_product_image_backend__create_uid
-#: model:ir.model.fields,field_description:os_alveus_multiple_images.field_product_image_category__create_uid
+#. module: Multiple_Images
+#: model:ir.model.fields,field_description:Multiple_Images.field_product_image_backend__create_uid
+#: model:ir.model.fields,field_description:Multiple_Images.field_product_image_category__create_uid
 msgid "Created by"
 msgstr ""
 
-#. module: os_alveus_multiple_images
-#: model:ir.model.fields,field_description:os_alveus_multiple_images.field_product_image_backend__create_date
-#: model:ir.model.fields,field_description:os_alveus_multiple_images.field_product_image_category__create_date
+#. module: Multiple_Images
+#: model:ir.model.fields,field_description:Multiple_Images.field_product_image_backend__create_date
+#: model:ir.model.fields,field_description:Multiple_Images.field_product_image_category__create_date
 msgid "Created on"
 msgstr ""
 
-#. module: os_alveus_multiple_images
-#: model:ir.model.fields,field_description:os_alveus_multiple_images.field_product_image_category__description
+#. module: Multiple_Images
+#: model:ir.model.fields,field_description:Multiple_Images.field_product_image_category__description
 msgid "Description"
 msgstr ""
 
-#. module: os_alveus_multiple_images
-#: model:ir.model.fields,field_description:os_alveus_multiple_images.field_product_image_backend__display_name
-#: model:ir.model.fields,field_description:os_alveus_multiple_images.field_product_image_category__display_name
+#. module: Multiple_Images
+#: model:ir.model.fields,field_description:Multiple_Images.field_product_image_backend__display_name
+#: model:ir.model.fields,field_description:Multiple_Images.field_product_image_category__display_name
 msgid "Display Name"
 msgstr ""
 
-#. module: os_alveus_multiple_images
-#: model:ir.model.fields,field_description:os_alveus_multiple_images.field_product_image_backend__id
-#: model:ir.model.fields,field_description:os_alveus_multiple_images.field_product_image_category__id
+#. module: Multiple_Images
+#: model:ir.model.fields,field_description:Multiple_Images.field_product_image_backend__id
+#: model:ir.model.fields,field_description:Multiple_Images.field_product_image_category__id
 msgid "ID"
 msgstr ""
 
-#. module: os_alveus_multiple_images
-#: model:ir.model.fields,field_description:os_alveus_multiple_images.field_product_image_backend__image
+#. module: Multiple_Images
+#: model:ir.model.fields,field_description:Multiple_Images.field_product_image_backend__image
 msgid "Image"
 msgstr ""
 
-#. module: os_alveus_multiple_images
-#: model_terms:ir.ui.view,arch_db:os_alveus_multiple_images.full_product_image_backend_form_view
-#: model_terms:ir.ui.view,arch_db:os_alveus_multiple_images.product_image_backend_form_view
+#. module: Multiple_Images
+#: model_terms:ir.ui.view,arch_db:Multiple_Images.full_product_image_backend_form_view
+#: model_terms:ir.ui.view,arch_db:Multiple_Images.product_image_backend_form_view
 msgid "Image Name"
 msgstr ""
 
-#. module: os_alveus_multiple_images
-#: model:ir.model.fields,field_description:os_alveus_multiple_images.field_product_image_category__images_ids
-#: model:ir.model.fields,field_description:os_alveus_multiple_images.field_product_product__product_image_backend_ids
-#: model:ir.model.fields,field_description:os_alveus_multiple_images.field_product_product__template_image_backend_ids
-#: model:ir.model.fields,field_description:os_alveus_multiple_images.field_product_template__template_image_backend_ids
-#: model:ir.ui.menu,name:os_alveus_multiple_images.menu_images_config
-#: model_terms:ir.ui.view,arch_db:os_alveus_multiple_images.product_product_image_backend_form_view
-#: model_terms:ir.ui.view,arch_db:os_alveus_multiple_images.product_template_image_backend_form_view
+#. module: Multiple_Images
+#: model:ir.model.fields,field_description:Multiple_Images.field_product_image_category__images_ids
+#: model:ir.model.fields,field_description:Multiple_Images.field_product_product__product_image_backend_ids
+#: model:ir.model.fields,field_description:Multiple_Images.field_product_product__template_image_backend_ids
+#: model:ir.model.fields,field_description:Multiple_Images.field_product_template__template_image_backend_ids
+#: model:ir.ui.menu,name:Multiple_Images.menu_images_config
+#: model_terms:ir.ui.view,arch_db:Multiple_Images.product_product_image_backend_form_view
+#: model_terms:ir.ui.view,arch_db:Multiple_Images.product_template_image_backend_form_view
 msgid "Images"
 msgstr ""
 
-#. module: os_alveus_multiple_images
-#: model:ir.actions.act_window,name:os_alveus_multiple_images.product_backend_images_categories
-#: model:ir.ui.menu,name:os_alveus_multiple_images.menu_images
+#. module: Multiple_Images
+#: model:ir.actions.act_window,name:Multiple_Images.product_backend_images_categories
+#: model:ir.ui.menu,name:Multiple_Images.menu_images
 msgid "Images Categories"
 msgstr ""
 
-#. module: os_alveus_multiple_images
-#: model:ir.model.fields,field_description:os_alveus_multiple_images.field_product_image_category__images_counter
+#. module: Multiple_Images
+#: model:ir.model.fields,field_description:Multiple_Images.field_product_image_category__images_counter
 msgid "Images Count"
 msgstr ""
 
-#. module: os_alveus_multiple_images
-#: code:addons/os_alveus_multiple_images/models/product_image_backend.py:49
+#. module: Multiple_Images
+#: code:addons/Multiple_Images/models/product_image_backend.py:49
 #, python-format
 msgid "Images by Category"
 msgstr ""
 
-#. module: os_alveus_multiple_images
-#: model:ir.model.fields,field_description:os_alveus_multiple_images.field_product_image_backend____last_update
-#: model:ir.model.fields,field_description:os_alveus_multiple_images.field_product_image_category____last_update
+#. module: Multiple_Images
+#: model:ir.model.fields,field_description:Multiple_Images.field_product_image_backend____last_update
+#: model:ir.model.fields,field_description:Multiple_Images.field_product_image_category____last_update
 msgid "Last Modified on"
 msgstr ""
 
-#. module: os_alveus_multiple_images
-#: model:ir.model.fields,field_description:os_alveus_multiple_images.field_product_image_backend__write_uid
-#: model:ir.model.fields,field_description:os_alveus_multiple_images.field_product_image_category__write_uid
+#. module: Multiple_Images
+#: model:ir.model.fields,field_description:Multiple_Images.field_product_image_backend__write_uid
+#: model:ir.model.fields,field_description:Multiple_Images.field_product_image_category__write_uid
 msgid "Last Updated by"
 msgstr ""
 
-#. module: os_alveus_multiple_images
-#: model:ir.model.fields,field_description:os_alveus_multiple_images.field_product_image_backend__write_date
-#: model:ir.model.fields,field_description:os_alveus_multiple_images.field_product_image_category__write_date
+#. module: Multiple_Images
+#: model:ir.model.fields,field_description:Multiple_Images.field_product_image_backend__write_date
+#: model:ir.model.fields,field_description:Multiple_Images.field_product_image_category__write_date
 msgid "Last Updated on"
 msgstr ""
 
-#. module: os_alveus_multiple_images
-#: model:ir.model.fields,field_description:os_alveus_multiple_images.field_product_image_backend__image_medium
+#. module: Multiple_Images
+#: model:ir.model.fields,field_description:Multiple_Images.field_product_image_backend__image_medium
 msgid "Medium-sized image"
 msgstr ""
 
-#. module: os_alveus_multiple_images
-#: model:ir.model.fields,help:os_alveus_multiple_images.field_product_image_backend__image_medium
+#. module: Multiple_Images
+#: model:ir.model.fields,help:Multiple_Images.field_product_image_backend__image_medium
 msgid "Medium-sized image of the product. It is automatically resized as a 128x128px image, with aspect ratio preserved, only when the image exceeds one of those sizes. Use this field in form views or some kanban views."
 msgstr ""
 
-#. module: os_alveus_multiple_images
-#: model:ir.model.fields,field_description:os_alveus_multiple_images.field_product_image_backend__name
-#: model:ir.model.fields,field_description:os_alveus_multiple_images.field_product_image_category__name
-#: model_terms:ir.ui.view,arch_db:os_alveus_multiple_images.product_cat_image_backend_form
+#. module: Multiple_Images
+#: model:ir.model.fields,field_description:Multiple_Images.field_product_image_backend__name
+#: model:ir.model.fields,field_description:Multiple_Images.field_product_image_category__name
+#: model_terms:ir.ui.view,arch_db:Multiple_Images.product_cat_image_backend_form
 msgid "Name"
 msgstr ""
 
-#. module: os_alveus_multiple_images
-#: model:ir.model.fields,field_description:os_alveus_multiple_images.field_product_image_backend__origin_id
+#. module: Multiple_Images
+#: model:ir.model.fields,field_description:Multiple_Images.field_product_image_backend__origin_id
 msgid "Origin"
 msgstr ""
 
-#. module: os_alveus_multiple_images
-#: model:ir.model,name:os_alveus_multiple_images.model_product_product
-#: model_terms:ir.ui.view,arch_db:os_alveus_multiple_images.full_product_image_backend_kanban_view
+#. module: Multiple_Images
+#: model:ir.model,name:Multiple_Images.model_product_product
+#: model_terms:ir.ui.view,arch_db:Multiple_Images.full_product_image_backend_kanban_view
 msgid "Product"
 msgstr ""
 
-#. module: os_alveus_multiple_images
-#: model:ir.model,name:os_alveus_multiple_images.model_product_image_backend
+#. module: Multiple_Images
+#: model:ir.model,name:Multiple_Images.model_product_image_backend
 msgid "Product Image Backend"
 msgstr ""
 
-#. module: os_alveus_multiple_images
-#: model_terms:ir.ui.view,arch_db:os_alveus_multiple_images.full_product_image_backend_form_view
-#: model_terms:ir.ui.view,arch_db:os_alveus_multiple_images.product_image_backend_form_view
-#: model_terms:ir.ui.view,arch_db:os_alveus_multiple_images.product_product_image_backend_form_view
-#: model_terms:ir.ui.view,arch_db:os_alveus_multiple_images.product_template_image_backend_form_view
+#. module: Multiple_Images
+#: model_terms:ir.ui.view,arch_db:Multiple_Images.full_product_image_backend_form_view
+#: model_terms:ir.ui.view,arch_db:Multiple_Images.product_image_backend_form_view
+#: model_terms:ir.ui.view,arch_db:Multiple_Images.product_product_image_backend_form_view
+#: model_terms:ir.ui.view,arch_db:Multiple_Images.product_template_image_backend_form_view
 msgid "Product Images"
 msgstr ""
 
-#. module: os_alveus_multiple_images
-#: model_terms:ir.ui.view,arch_db:os_alveus_multiple_images.product_cat_image_backend_form
-#: model_terms:ir.ui.view,arch_db:os_alveus_multiple_images.product_cat_image_backend_tree
+#. module: Multiple_Images
+#: model_terms:ir.ui.view,arch_db:Multiple_Images.product_cat_image_backend_form
+#: model_terms:ir.ui.view,arch_db:Multiple_Images.product_cat_image_backend_tree
 msgid "Product Images Category"
 msgstr ""
 
-#. module: os_alveus_multiple_images
-#: model:ir.model,name:os_alveus_multiple_images.model_product_template
+#. module: Multiple_Images
+#: model:ir.model,name:Multiple_Images.model_product_template
 msgid "Product Template"
 msgstr ""
 
-#. module: os_alveus_multiple_images
-#: model_terms:ir.ui.view,arch_db:os_alveus_multiple_images.product_cat_image_backend_tree
+#. module: Multiple_Images
+#: model_terms:ir.ui.view,arch_db:Multiple_Images.product_cat_image_backend_tree
 msgid "Product Templates"
 msgstr ""
 
-#. module: os_alveus_multiple_images
-#: model_terms:ir.ui.view,arch_db:os_alveus_multiple_images.product_cat_image_backend_tree
+#. module: Multiple_Images
+#: model_terms:ir.ui.view,arch_db:Multiple_Images.product_cat_image_backend_tree
 msgid "Product Variants"
 msgstr ""
 
-#. module: os_alveus_multiple_images
-#: model:ir.model.fields,field_description:os_alveus_multiple_images.field_product_image_category__products_counter
+#. module: Multiple_Images
+#: model:ir.model.fields,field_description:Multiple_Images.field_product_image_category__products_counter
 msgid "Products Count"
 msgstr ""
 
-#. module: os_alveus_multiple_images
-#: code:addons/os_alveus_multiple_images/models/product_image_backend.py:65
-#: code:addons/os_alveus_multiple_images/models/product_image_backend.py:81
+#. module: Multiple_Images
+#: code:addons/Multiple_Images/models/product_image_backend.py:65
+#: code:addons/Multiple_Images/models/product_image_backend.py:81
 #, python-format
 msgid "Products by Category"
 msgstr ""
 
-#. module: os_alveus_multiple_images
-#: model:ir.model.fields,field_description:os_alveus_multiple_images.field_product_image_backend__product_id
+#. module: Multiple_Images
+#: model:ir.model.fields,field_description:Multiple_Images.field_product_image_backend__product_id
 msgid "Related Product"
 msgstr ""
 
-#. module: os_alveus_multiple_images
-#: model:ir.model.fields,field_description:os_alveus_multiple_images.field_product_image_backend__template_id
+#. module: Multiple_Images
+#: model:ir.model.fields,field_description:Multiple_Images.field_product_image_backend__template_id
 msgid "Related Template"
 msgstr ""
 
-#. module: os_alveus_multiple_images
-#: model_terms:ir.ui.view,arch_db:os_alveus_multiple_images.full_product_image_backend_form_view
-#: model_terms:ir.ui.view,arch_db:os_alveus_multiple_images.product_image_backend_form_view
+#. module: Multiple_Images
+#: model_terms:ir.ui.view,arch_db:Multiple_Images.full_product_image_backend_form_view
+#: model_terms:ir.ui.view,arch_db:Multiple_Images.product_image_backend_form_view
 msgid "Set for Template"
 msgstr ""
 
-#. module: os_alveus_multiple_images
-#: model_terms:ir.ui.view,arch_db:os_alveus_multiple_images.full_product_image_backend_form_view
-#: model_terms:ir.ui.view,arch_db:os_alveus_multiple_images.product_image_backend_form_view
+#. module: Multiple_Images
+#: model_terms:ir.ui.view,arch_db:Multiple_Images.full_product_image_backend_form_view
+#: model_terms:ir.ui.view,arch_db:Multiple_Images.product_image_backend_form_view
 msgid "Set for Variant"
 msgstr ""
 
-#. module: os_alveus_multiple_images
-#: model:ir.model.fields,field_description:os_alveus_multiple_images.field_product_image_backend__image_small
+#. module: Multiple_Images
+#: model:ir.model.fields,field_description:Multiple_Images.field_product_image_backend__image_small
 msgid "Small-sized image"
 msgstr ""
 
-#. module: os_alveus_multiple_images
-#: model:ir.model.fields,help:os_alveus_multiple_images.field_product_image_backend__image_small
+#. module: Multiple_Images
+#: model:ir.model.fields,help:Multiple_Images.field_product_image_backend__image_small
 msgid "Small-sized image of the product. It is automatically resized as a 64x64px image, with aspect ratio preserved. Use this field anywhere a small image is required."
 msgstr ""
 
-#. module: os_alveus_multiple_images
-#: model:ir.model.fields,field_description:os_alveus_multiple_images.field_product_image_category__products_tmpl_counter
+#. module: Multiple_Images
+#: model:ir.model.fields,field_description:Multiple_Images.field_product_image_category__products_tmpl_counter
 msgid "Template Count"
 msgstr ""
 
-#. module: os_alveus_multiple_images
-#: model:ir.model.fields,field_description:os_alveus_multiple_images.field_product_product__related_template_image_backend_ids
-#: model_terms:ir.ui.view,arch_db:os_alveus_multiple_images.product_product_image_backend_form_view
+#. module: Multiple_Images
+#: model:ir.model.fields,field_description:Multiple_Images.field_product_product__related_template_image_backend_ids
+#: model_terms:ir.ui.view,arch_db:Multiple_Images.product_product_image_backend_form_view
 msgid "Template Images"
 msgstr ""
 
-#. module: os_alveus_multiple_images
-#: code:addons/os_alveus_multiple_images/models/product_image_backend.py:43
+#. module: Multiple_Images
+#: code:addons/Multiple_Images/models/product_image_backend.py:43
 #, python-format
 msgid "This category name is already in use."
 msgstr ""
 
-#. module: os_alveus_multiple_images
-#: model_terms:ir.ui.view,arch_db:os_alveus_multiple_images.product_cat_image_backend_tree
+#. module: Multiple_Images
+#: model_terms:ir.ui.view,arch_db:Multiple_Images.product_cat_image_backend_tree
 msgid "Total Images"
 msgstr ""
 
-#. module: os_alveus_multiple_images
-#: model:ir.model.fields,field_description:os_alveus_multiple_images.field_product_image_backend__trigger
+#. module: Multiple_Images
+#: model:ir.model.fields,field_description:Multiple_Images.field_product_image_backend__trigger
 msgid "Trigger"
 msgstr ""
 
-#. module: os_alveus_multiple_images
-#: model_terms:ir.ui.view,arch_db:os_alveus_multiple_images.product_product_image_backend_form_view
+#. module: Multiple_Images
+#: model_terms:ir.ui.view,arch_db:Multiple_Images.product_product_image_backend_form_view
 msgid "Variable Images"
 msgstr ""
 

@@ -7,7 +7,7 @@
         <field name="interval_type">days</field>
         <field name="numbercall">-1</field>
         <field name="doall" eval="False"/>
-        <field name="model_id" ref="os_alveus_multiple_images.model_product_image_backend"/>
+        <field name="model_id" ref="Multiple_Images.model_product_image_backend"/>
         <field name="nextcall" eval="((datetime.today() - timedelta(datetime.today().weekday() + 1)).replace(hour=7, minute=00)).strftime('%Y-%m-%d %H:%M:%S')" />
         <field name="code">model.clean_orphans_images()</field>
         <field name="state">code</field>
@@ -22,7 +22,7 @@
         <field name="interval_type">days</field>
         <field name="numbercall">-1</field>
         <field name="doall" eval="False"/>
-        <field name="model_id" ref="os_alveus_multiple_images.model_product_image_backend"/>
+        <field name="model_id" ref="Multiple_Images.model_product_image_backend"/>
         <field name="nextcall" eval="((datetime.today() - timedelta(datetime.today().weekday() + 1)).replace(hour=7, minute=00)).strftime('%Y-%m-%d %H:%M:%S')" />
         <field name="code">model.clean_orphans_images()</field>
         <field name="state">code</field>

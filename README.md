@@ -44,13 +44,19 @@ Creates an image gallery section available on every product and also on the prod
 Install this add-on and it will be automatically ready to use it.
 
 Now if you take a look at any product form you will see a new menu `Images`. Then click it and there you must see something like this:
+<div style="max-width: 40vw; margin-right: auto">
 <img src="./static/description/screenshot1.png">
+</div>
 
 Now if you want to add a new image it's fairly simple even though you are in a product variant or in a product template.
+<div style="max-width: 40vw; margin: auto">
 <img src="./static/description/screenshot2.png">
+</div>
 
 You can also create common categories of images for different products!
+<div style="max-width: 40vw; margin-left: auto">
 <img src="./static/description/screenshot3.png">
+</div>
 
 # Improvements
 
