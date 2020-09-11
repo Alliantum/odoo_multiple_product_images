@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 <?xml version="1.0" encoding="utf-8" ?>
 
 <odoo>
@@ -8,4 +9,17 @@
                 src="/os_alveus_multiple_images/static/src/js/web_ir_actions_act_view_reload.js"/>
         </xpath>
     </template>
+=======
+<?xml version="1.0" encoding="utf-8" ?>
+
+<odoo>
+    <!-- JS and CSS links resources -->
+    <template id="assets_backend" name="multi_images" inherit_id="web.assets_backend">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/os_alveus_multiple_images/static/src/scss/multiple_images.scss"/>
+            <script type="text/javascript"
+                src="/os_alveus_multiple_images/static/src/js/web_ir_actions_act_view_reload.js"/>
+        </xpath>
+    </template>
+>>>>>>> Stashed changes
 </odoo>
