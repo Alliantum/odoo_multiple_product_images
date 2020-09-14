@@ -152,7 +152,6 @@
                             <field name="product_id" invisible="1"/>
                             <field name="template_id" invisible="1"/>
                             <label for="category_ids" string="Categories"/><br/>
-<!--                            <field name="category_ids"  widget="many2many_tags" options="{'color_field': 'color', 'no_create_edit': True}"/>-->
                             <field name="category_ids"  widget="many2many_tags" />
                         </div>
                     </div>
@@ -221,7 +220,6 @@
                                 <field name="product_id" />
                                 <field name="template_id" />
                                 <field name="category_ids"  widget="many2many_tags" options="{'color_field': 'color', 'no_create_edit': True}"/>
-<!--                                <field name="category_ids"  widget="many2many_tags" />-->
                         </group>
                         </div>
                         <div class="col-md-6 col-xl-7 text-center o_website_sale_image_modal_container">

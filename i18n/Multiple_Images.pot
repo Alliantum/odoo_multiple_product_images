@@ -1,0 +1,279 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* Multiple_Images
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 12.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-02-13 15:13+0000\n"
+"PO-Revision-Date: 2020-02-13 15:13+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: Multiple_Images
+#: model_terms:ir.ui.view,arch_db:Multiple_Images.product_cat_image_backend_form
+msgid "<span class=\"o_stat_text\">Images</span>"
+msgstr ""
+
+#. module: Multiple_Images
+#: model_terms:ir.ui.view,arch_db:Multiple_Images.product_cat_image_backend_form
+msgid "<span class=\"o_stat_text\">Templates</span>"
+msgstr ""
+
+#. module: Multiple_Images
+#: model_terms:ir.ui.view,arch_db:Multiple_Images.product_cat_image_backend_form
+msgid "<span class=\"o_stat_text\">Variants</span>"
+msgstr ""
+
+#. module: Multiple_Images
+#: model:ir.model,name:Multiple_Images.model_product_image_category
+msgid "An image category"
+msgstr ""
+
+#. module: Multiple_Images
+#: model:ir.model.fields,field_description:Multiple_Images.field_product_image_backend__category_ids
+#: model_terms:ir.ui.view,arch_db:Multiple_Images.product_image_backend_form_view
+msgid "Categories"
+msgstr ""
+
+#. module: Multiple_Images
+#: model:ir.actions.server,name:Multiple_Images.clean_orphans_images_cron_ir_actions_server
+#: model:ir.cron,cron_name:Multiple_Images.clean_orphans_images_cron
+#: model:ir.cron,name:Multiple_Images.clean_orphans_images_cron
+msgid "Clean Orphan Images"
+msgstr ""
+
+#. module: Multiple_Images
+#: model:ir.model.fields,field_description:Multiple_Images.field_product_image_category__color
+msgid "Color"
+msgstr ""
+
+#. module: Multiple_Images
+#: model:ir.model.fields,field_description:Multiple_Images.field_product_image_backend__create_uid
+#: model:ir.model.fields,field_description:Multiple_Images.field_product_image_category__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: Multiple_Images
+#: model:ir.model.fields,field_description:Multiple_Images.field_product_image_backend__create_date
+#: model:ir.model.fields,field_description:Multiple_Images.field_product_image_category__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: Multiple_Images
+#: model:ir.model.fields,field_description:Multiple_Images.field_product_image_category__description
+msgid "Description"
+msgstr ""
+
+#. module: Multiple_Images
+#: model:ir.model.fields,field_description:Multiple_Images.field_product_image_backend__display_name
+#: model:ir.model.fields,field_description:Multiple_Images.field_product_image_category__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: Multiple_Images
+#: model:ir.model.fields,field_description:Multiple_Images.field_product_image_backend__id
+#: model:ir.model.fields,field_description:Multiple_Images.field_product_image_category__id
+msgid "ID"
+msgstr ""
+
+#. module: Multiple_Images
+#: model:ir.model.fields,field_description:Multiple_Images.field_product_image_backend__image
+msgid "Image"
+msgstr ""
+
+#. module: Multiple_Images
+#: model_terms:ir.ui.view,arch_db:Multiple_Images.full_product_image_backend_form_view
+#: model_terms:ir.ui.view,arch_db:Multiple_Images.product_image_backend_form_view
+msgid "Image Name"
+msgstr ""
+
+#. module: Multiple_Images
+#: model:ir.model.fields,field_description:Multiple_Images.field_product_image_category__images_ids
+#: model:ir.model.fields,field_description:Multiple_Images.field_product_product__product_image_backend_ids
+#: model:ir.model.fields,field_description:Multiple_Images.field_product_product__template_image_backend_ids
+#: model:ir.model.fields,field_description:Multiple_Images.field_product_template__template_image_backend_ids
+#: model:ir.ui.menu,name:Multiple_Images.menu_images_config
+#: model_terms:ir.ui.view,arch_db:Multiple_Images.product_product_image_backend_form_view
+#: model_terms:ir.ui.view,arch_db:Multiple_Images.product_template_image_backend_form_view
+msgid "Images"
+msgstr ""
+
+#. module: Multiple_Images
+#: model:ir.actions.act_window,name:Multiple_Images.product_backend_images_categories
+#: model:ir.ui.menu,name:Multiple_Images.menu_images
+msgid "Images Categories"
+msgstr ""
+
+#. module: Multiple_Images
+#: model:ir.model.fields,field_description:Multiple_Images.field_product_image_category__images_counter
+msgid "Images Count"
+msgstr ""
+
+#. module: Multiple_Images
+#: code:addons/Multiple_Images/models/product_image_backend.py:49
+#, python-format
+msgid "Images by Category"
+msgstr ""
+
+#. module: Multiple_Images
+#: model:ir.model.fields,field_description:Multiple_Images.field_product_image_backend____last_update
+#: model:ir.model.fields,field_description:Multiple_Images.field_product_image_category____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: Multiple_Images
+#: model:ir.model.fields,field_description:Multiple_Images.field_product_image_backend__write_uid
+#: model:ir.model.fields,field_description:Multiple_Images.field_product_image_category__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: Multiple_Images
+#: model:ir.model.fields,field_description:Multiple_Images.field_product_image_backend__write_date
+#: model:ir.model.fields,field_description:Multiple_Images.field_product_image_category__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: Multiple_Images
+#: model:ir.model.fields,field_description:Multiple_Images.field_product_image_backend__image_medium
+msgid "Medium-sized image"
+msgstr ""
+
+#. module: Multiple_Images
+#: model:ir.model.fields,help:Multiple_Images.field_product_image_backend__image_medium
+msgid "Medium-sized image of the product. It is automatically resized as a 128x128px image, with aspect ratio preserved, only when the image exceeds one of those sizes. Use this field in form views or some kanban views."
+msgstr ""
+
+#. module: Multiple_Images
+#: model:ir.model.fields,field_description:Multiple_Images.field_product_image_backend__name
+#: model:ir.model.fields,field_description:Multiple_Images.field_product_image_category__name
+#: model_terms:ir.ui.view,arch_db:Multiple_Images.product_cat_image_backend_form
+msgid "Name"
+msgstr ""
+
+#. module: Multiple_Images
+#: model:ir.model.fields,field_description:Multiple_Images.field_product_image_backend__origin_id
+msgid "Origin"
+msgstr ""
+
+#. module: Multiple_Images
+#: model:ir.model,name:Multiple_Images.model_product_product
+#: model_terms:ir.ui.view,arch_db:Multiple_Images.full_product_image_backend_kanban_view
+msgid "Product"
+msgstr ""
+
+#. module: Multiple_Images
+#: model:ir.model,name:Multiple_Images.model_product_image_backend
+msgid "Product Image Backend"
+msgstr ""
+
+#. module: Multiple_Images
+#: model_terms:ir.ui.view,arch_db:Multiple_Images.full_product_image_backend_form_view
+#: model_terms:ir.ui.view,arch_db:Multiple_Images.product_image_backend_form_view
+#: model_terms:ir.ui.view,arch_db:Multiple_Images.product_product_image_backend_form_view
+#: model_terms:ir.ui.view,arch_db:Multiple_Images.product_template_image_backend_form_view
+msgid "Product Images"
+msgstr ""
+
+#. module: Multiple_Images
+#: model_terms:ir.ui.view,arch_db:Multiple_Images.product_cat_image_backend_form
+#: model_terms:ir.ui.view,arch_db:Multiple_Images.product_cat_image_backend_tree
+msgid "Product Images Category"
+msgstr ""
+
+#. module: Multiple_Images
+#: model:ir.model,name:Multiple_Images.model_product_template
+msgid "Product Template"
+msgstr ""
+
+#. module: Multiple_Images
+#: model_terms:ir.ui.view,arch_db:Multiple_Images.product_cat_image_backend_tree
+msgid "Product Templates"
+msgstr ""
+
+#. module: Multiple_Images
+#: model_terms:ir.ui.view,arch_db:Multiple_Images.product_cat_image_backend_tree
+msgid "Product Variants"
+msgstr ""
+
+#. module: Multiple_Images
+#: model:ir.model.fields,field_description:Multiple_Images.field_product_image_category__products_counter
+msgid "Products Count"
+msgstr ""
+
+#. module: Multiple_Images
+#: code:addons/Multiple_Images/models/product_image_backend.py:65
+#: code:addons/Multiple_Images/models/product_image_backend.py:81
+#, python-format
+msgid "Products by Category"
+msgstr ""
+
+#. module: Multiple_Images
+#: model:ir.model.fields,field_description:Multiple_Images.field_product_image_backend__product_id
+msgid "Related Product"
+msgstr ""
+
+#. module: Multiple_Images
+#: model:ir.model.fields,field_description:Multiple_Images.field_product_image_backend__template_id
+msgid "Related Template"
+msgstr ""
+
+#. module: Multiple_Images
+#: model_terms:ir.ui.view,arch_db:Multiple_Images.full_product_image_backend_form_view
+#: model_terms:ir.ui.view,arch_db:Multiple_Images.product_image_backend_form_view
+msgid "Set for Template"
+msgstr ""
+
+#. module: Multiple_Images
+#: model_terms:ir.ui.view,arch_db:Multiple_Images.full_product_image_backend_form_view
+#: model_terms:ir.ui.view,arch_db:Multiple_Images.product_image_backend_form_view
+msgid "Set for Variant"
+msgstr ""
+
+#. module: Multiple_Images
+#: model:ir.model.fields,field_description:Multiple_Images.field_product_image_backend__image_small
+msgid "Small-sized image"
+msgstr ""
+
+#. module: Multiple_Images
+#: model:ir.model.fields,help:Multiple_Images.field_product_image_backend__image_small
+msgid "Small-sized image of the product. It is automatically resized as a 64x64px image, with aspect ratio preserved. Use this field anywhere a small image is required."
+msgstr ""
+
+#. module: Multiple_Images
+#: model:ir.model.fields,field_description:Multiple_Images.field_product_image_category__products_tmpl_counter
+msgid "Template Count"
+msgstr ""
+
+#. module: Multiple_Images
+#: model:ir.model.fields,field_description:Multiple_Images.field_product_product__related_template_image_backend_ids
+#: model_terms:ir.ui.view,arch_db:Multiple_Images.product_product_image_backend_form_view
+msgid "Template Images"
+msgstr ""
+
+#. module: Multiple_Images
+#: code:addons/Multiple_Images/models/product_image_backend.py:43
+#, python-format
+msgid "This category name is already in use."
+msgstr ""
+
+#. module: Multiple_Images
+#: model_terms:ir.ui.view,arch_db:Multiple_Images.product_cat_image_backend_tree
+msgid "Total Images"
+msgstr ""
+
+#. module: Multiple_Images
+#: model:ir.model.fields,field_description:Multiple_Images.field_product_image_backend__trigger
+msgid "Trigger"
+msgstr ""
+
+#. module: Multiple_Images
+#: model_terms:ir.ui.view,arch_db:Multiple_Images.product_product_image_backend_form_view
+msgid "Variable Images"
+msgstr ""
+
