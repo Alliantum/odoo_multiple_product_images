@@ -4,9 +4,9 @@
     <!-- JS and CSS links resources -->
     <template id="assets_backend" name="multi_images" inherit_id="web.assets_backend">
         <xpath expr="//link[last()]" position="after">
-            <link rel="stylesheet" type="text/scss" href="/Multiple_Images/static/src/scss/multiple_images.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/odoo_multiple_product_images/static/src/scss/multiple_images.scss"/>
             <script type="text/javascript"
-                src="/Multiple_Images/static/src/js/web_ir_actions_act_view_reload.js"/>
+                src="/odoo_multiple_product_images/static/src/js/web_ir_actions_act_view_reload.js"/>
         </xpath>
     </template>
 </odoo>

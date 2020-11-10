@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "Multiple_Images",
+    'name': "Multiple Images",
     'summary': """
         Multiple Images and Categories on Products""",
     'description': """
