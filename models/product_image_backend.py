@@ -1,9 +1,10 @@
 # -*- encoding: utf-8 -*-
 
-from odoo import fields, models, api, _, tools
+from odoo import fields, models, api, _
 from odoo.exceptions import ValidationError
 from odoo.tools.image import image_get_resized_images
 import logging
+import base64
 
 _logger = logging.getLogger(__name__)
 
@@ -106,6 +107,7 @@ class ProductImageBackend(models.Model):
         help="Small-sized image of the product. It is automatically "
              "resized as a 64x64px image, with aspect ratio preserved. "
              "Use this field anywhere a small image is required.")
+    raw_image_size = fields.Integer(compute="_compute_raw_image_size")
     filename = fields.Char()
     product_id = fields.Many2one('product.product', 'Related Product', copy=True)
     template_id = fields.Many2one('product.template', 'Related Template', copy=True)
@@ -133,6 +135,13 @@ class ProductImageBackend(models.Model):
                                                  avoid_resize_small=False,
                                                  sizes={'image_medium': (386, 386), 'image_small': (128, 128)}))
         return super(ProductImageBackend, self).write(vals)
+
+    @api.depends('image')
+    def _compute_raw_image_size(self):
+        for backend_image in self:
+            if backend_image.image:
+                # In Kb
+                backend_image.raw_image_size = len(base64.b64decode(backend_image.image)) // 1000
 
     # This method pretains to trigger and its just used as a lifecycle method, to get always trigger when the model is loaded.
     @api.multi
