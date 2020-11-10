@@ -15,7 +15,7 @@
                             <field name="id"/>
                             <field name="name"/>
                             <field name="image_medium"/>
-                            <field name="image"/>
+                            <field name="raw_image_size"/>
                             <templates>
                                 <t t-name="kanban-box">
                                     <div class="o_attachment oe_kanban_global_click o_website_sale_image_card">
@@ -27,16 +27,15 @@
                                                     <field name="name"/>
                                                 </div>
                                             </div>
-                                            <t t-set="size" t-value="[record.image.value][0]"/>
-                                            <t t-set="size_status" t-value="'danger'" t-if="size.indexOf('Bytes') !== -1 or ( size.indexOf('Kb') !== -1 and size[2]=='.')"/>
-                                            <t t-set="size_status" t-value="'warning'" t-elif="( size.indexOf('Kb') !== -1 and size[3]=='.')"/>
+                                            <t t-set="size" t-value="record.raw_image_size.value"/>
+                                            <t t-set="size_status" t-value="'danger'" t-if="size &lt;= 99"/>
+                                            <t t-set="size_status" t-value="'warning'" t-elif="size &lt;= 999"/>
                                             <t t-set="size_status" t-value="'normal'"  t-else=""/>
                                             <t t-set="message" t-value="'Acceptable file size'" t-if="size_status == 'normal'"></t>
                                             <t t-set="message" t-value="'Huge file size. The image should be optimized/reduced.'" t-elif="size_status == 'warning'"></t>
                                             <t t-set="message" t-value="'Optimization required! Reduce the image size or increase your compression settings.'" t-else=""></t>
-
                                             <span t-attf-class="o_website_sale_image_card_size badge badge-#{size_status}" t-att-title="message">
-                                                <t t-esc="record.image.value"/>
+                                                <t t-esc="record.raw_image_size.value and record.raw_image_size.value + ' kb'"/>
                                             </span>
                                         </div>
                                         <field name="category_ids" />
@@ -51,7 +50,7 @@
                             <field name="id"/>
                             <field name="name"/>
                             <field name="image_medium"/>
-                            <field name="image"/>
+                            <field name="raw_image_size"/>
                             <field name="origin_id" />
                             <field name="trigger" />
                             <templates>
@@ -65,17 +64,15 @@
                                                     <field name="name"/>
                                                 </div>
                                             </div>
-
-                                            <t t-set="size" t-value="[record.image.value][0]"/>
-                                            <t t-set="size_status" t-value="'danger'" t-if="size.indexOf('Bytes') !== -1 or ( size.indexOf('Kb') !== -1 and size[2]=='.')"/>
-                                            <t t-set="size_status" t-value="'warning'" t-elif="( size.indexOf('Kb') !== -1 and size[3]=='.')"/>
+                                            <t t-set="size" t-value="record.raw_image_size.value"/>
+                                            <t t-set="size_status" t-value="'danger'" t-if="size &lt;= 99"/>
+                                            <t t-set="size_status" t-value="'warning'" t-elif="size &lt;= 999"/>
                                             <t t-set="size_status" t-value="'normal'"  t-else=""/>
                                             <t t-set="message" t-value="'Acceptable file size'" t-if="size_status == 'normal'"></t>
                                             <t t-set="message" t-value="'Huge file size. The image should be optimized/reduced.'" t-elif="size_status == 'warning'"></t>
                                             <t t-set="message" t-value="'Optimization required! Reduce the image size or increase your compression settings.'" t-else=""></t>
-
                                             <span t-attf-class="o_website_sale_image_card_size badge badge-#{size_status}" t-att-title="message">
-                                                <t t-esc="record.image.value"/>
+                                                <t t-esc="record.raw_image_size.value and record.raw_image_size.value + ' kb'"/>
                                             </span>
                                         </div>
                                         <field name="category_ids" />
@@ -102,7 +99,7 @@
                             <field name="id"/>
                             <field name="name"/>
                             <field name="image_medium"/>
-                            <field name="image"/>
+                            <field name="raw_image_size"/>
                             <templates>
                                 <t t-name="kanban-box">
                                     <div class="o_attachment oe_kanban_global_click o_website_sale_image_card">
@@ -114,17 +111,15 @@
                                                     <field name="name"/>
                                                 </div>
                                             </div>
-
-                                            <t t-set="size" t-value="[record.image.value][0]"/>
-                                            <t t-set="size_status" t-value="'danger'" t-if="size.indexOf('Bytes') !== -1 or ( size.indexOf('Kb') !== -1 and size[2]=='.')"/>
-                                            <t t-set="size_status" t-value="'warning'" t-elif="( size.indexOf('Kb') !== -1 and size[3]=='.')"/>
+                                            <t t-set="size" t-value="record.raw_image_size.value"/>
+                                            <t t-set="size_status" t-value="'danger'" t-if="size &lt;= 99"/>
+                                            <t t-set="size_status" t-value="'warning'" t-elif="size &lt;= 999"/>
                                             <t t-set="size_status" t-value="'normal'"  t-else=""/>
                                             <t t-set="message" t-value="'Acceptable file size'" t-if="size_status == 'normal'"></t>
                                             <t t-set="message" t-value="'Huge file size. The image should be optimized/reduced.'" t-elif="size_status == 'warning'"></t>
                                             <t t-set="message" t-value="'Optimization required! Reduce the image size or increase your compression settings.'" t-else=""></t>
                                             <span t-attf-class="o_website_sale_image_card_size badge badge-#{size_status}" t-att-title="message">
-                                                <t t-esc="record.image.value"/>
-
+                                                <t t-esc="record.raw_image_size.value and record.raw_image_size.value + ' kb'"/>
                                             </span>
                                         </div>
                                         <field name="category_ids" />
