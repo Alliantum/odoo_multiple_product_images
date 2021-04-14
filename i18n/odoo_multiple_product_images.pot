@@ -276,4 +276,3 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:odoo_multiple_product_images.product_product_image_backend_form_view
 msgid "Variable Images"
 msgstr ""
-
