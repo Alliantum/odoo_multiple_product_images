@@ -3,13 +3,10 @@
 <img src="https://img.shields.io/badge/Odoo-Version%2012-875A7B.svg?style=plastic"></img>
 </a>
 <a href="https://www.alliantum.com">
-<img src="https://raster.shields.io/badge/Company-Alliantum-0065bf.svg?style=plastic"></img>
+<img src="https://img.shields.io/badge/Company-Alliantum-0065bf.svg?style=plastic"></img>
 </a>
 <a href="http://www.gnu.org/licenses/agpl-3.0-standalone.html">
 <img src="https://img.shields.io/badge/licence-AGPL--3-blue.svg?style=plastic"></img>
-</a>
-<img src="https://img.shields.io/badge/module%20version-1.0.0-F47D42.svg?style=plastic&"></img>
-</div>
 
 <div class="item" style="position: -webkit-sticky;
   position: sticky;
