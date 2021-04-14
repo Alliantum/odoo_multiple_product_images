@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 12.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-13 15:13+0000\n"
-"PO-Revision-Date: 2020-02-13 15:13+0000\n"
+"POT-Creation-Date: 2021-04-14 11:31+0000\n"
+"PO-Revision-Date: 2021-04-14 11:31+0000\n"
 "Last-Translator: <>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -77,6 +77,11 @@ msgid "Display Name"
 msgstr ""
 
 #. module: odoo_multiple_product_images
+#: model:ir.model.fields,field_description:odoo_multiple_product_images.field_product_image_backend__filename
+msgid "Filename"
+msgstr ""
+
+#. module: odoo_multiple_product_images
 #: model:ir.model.fields,field_description:odoo_multiple_product_images.field_product_image_backend__id
 #: model:ir.model.fields,field_description:odoo_multiple_product_images.field_product_image_category__id
 msgid "ID"
@@ -96,8 +101,6 @@ msgstr ""
 #. module: odoo_multiple_product_images
 #: model:ir.model.fields,field_description:odoo_multiple_product_images.field_product_image_category__images_ids
 #: model:ir.model.fields,field_description:odoo_multiple_product_images.field_product_product__product_image_backend_ids
-#: model:ir.model.fields,field_description:odoo_multiple_product_images.field_product_product__template_image_backend_ids
-#: model:ir.model.fields,field_description:odoo_multiple_product_images.field_product_template__template_image_backend_ids
 #: model:ir.ui.menu,name:odoo_multiple_product_images.menu_images_config
 #: model_terms:ir.ui.view,arch_db:odoo_multiple_product_images.product_product_image_backend_form_view
 #: model_terms:ir.ui.view,arch_db:odoo_multiple_product_images.product_template_image_backend_form_view
@@ -116,7 +119,7 @@ msgid "Images Count"
 msgstr ""
 
 #. module: odoo_multiple_product_images
-#: code:addons/odoo_multiple_product_images/models/product_image_backend.py:49
+#: code:addons/odoo_multiple_product_images/models/product_image_backend.py:52
 #, python-format
 msgid "Images by Category"
 msgstr ""
@@ -207,10 +210,15 @@ msgid "Products Count"
 msgstr ""
 
 #. module: odoo_multiple_product_images
-#: code:addons/odoo_multiple_product_images/models/product_image_backend.py:65
-#: code:addons/odoo_multiple_product_images/models/product_image_backend.py:81
+#: code:addons/odoo_multiple_product_images/models/product_image_backend.py:68
+#: code:addons/odoo_multiple_product_images/models/product_image_backend.py:84
 #, python-format
 msgid "Products by Category"
+msgstr ""
+
+#. module: odoo_multiple_product_images
+#: model:ir.model.fields,field_description:odoo_multiple_product_images.field_product_image_backend__raw_image_size
+msgid "Raw Image Size"
 msgstr ""
 
 #. module: odoo_multiple_product_images
@@ -251,13 +259,19 @@ msgid "Template Count"
 msgstr ""
 
 #. module: odoo_multiple_product_images
+#: model:ir.model.fields,field_description:odoo_multiple_product_images.field_product_product__template_image_backend_ids
+#: model:ir.model.fields,field_description:odoo_multiple_product_images.field_product_template__template_image_backend_ids
+msgid "Template Image Backend"
+msgstr ""
+
+#. module: odoo_multiple_product_images
 #: model:ir.model.fields,field_description:odoo_multiple_product_images.field_product_product__related_template_image_backend_ids
 #: model_terms:ir.ui.view,arch_db:odoo_multiple_product_images.product_product_image_backend_form_view
 msgid "Template Images"
 msgstr ""
 
 #. module: odoo_multiple_product_images
-#: code:addons/odoo_multiple_product_images/models/product_image_backend.py:43
+#: code:addons/odoo_multiple_product_images/models/product_image_backend.py:46
 #, python-format
 msgid "This category name is already in use."
 msgstr ""
@@ -274,5 +288,6 @@ msgstr ""
 
 #. module: odoo_multiple_product_images
 #: model_terms:ir.ui.view,arch_db:odoo_multiple_product_images.product_product_image_backend_form_view
-msgid "Variable Images"
+msgid "Variant Images"
 msgstr ""
+

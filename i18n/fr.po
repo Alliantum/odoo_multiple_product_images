@@ -18,68 +18,68 @@ msgstr ""
 #. module: odoo_multiple_product_images
 #: model_terms:ir.ui.view,arch_db:odoo_multiple_product_images.product_cat_image_backend_form
 msgid "<span class=\"o_stat_text\">Images</span>"
-msgstr "<span class=\"o_stat_text\">Bilder</span>"
+msgstr "<span class=\"o_stat_text\">Images</span>"
 
 #. module: odoo_multiple_product_images
 #: model_terms:ir.ui.view,arch_db:odoo_multiple_product_images.product_cat_image_backend_form
 msgid "<span class=\"o_stat_text\">Templates</span>"
-msgstr "<span class=\"o_stat_text\">Vorlagen</span>"
+msgstr "<span class=\"o_stat_text\">Modèles</span>"
 
 #. module: odoo_multiple_product_images
 #: model_terms:ir.ui.view,arch_db:odoo_multiple_product_images.product_cat_image_backend_form
 msgid "<span class=\"o_stat_text\">Variants</span>"
-msgstr "<span class=\"o_stat_text\">Variante</span>"
+msgstr "<span class=\"o_stat_text\">Variantes</span>"
 
 #. module: odoo_multiple_product_images
 #: model:ir.model,name:odoo_multiple_product_images.model_product_image_category
 msgid "An image category"
-msgstr "Eine Bildkategorie"
+msgstr "Une catégorie d'images"
 
 #. module: odoo_multiple_product_images
 #: model:ir.model.fields,field_description:odoo_multiple_product_images.field_product_image_backend__category_ids
 #: model_terms:ir.ui.view,arch_db:odoo_multiple_product_images.product_image_backend_form_view
 msgid "Categories"
-msgstr "Kategorien"
+msgstr "Catégories"
 
 #. module: odoo_multiple_product_images
 #: model:ir.actions.server,name:odoo_multiple_product_images.clean_orphans_images_cron_ir_actions_server
 #: model:ir.cron,cron_name:odoo_multiple_product_images.clean_orphans_images_cron
 #: model:ir.cron,name:odoo_multiple_product_images.clean_orphans_images_cron
 msgid "Clean Orphan Images"
-msgstr "Verwaiste Bilder bereinigen"
+msgstr "Nettoyer les images orphelines"
 
 #. module: odoo_multiple_product_images
 #: model:ir.model.fields,field_description:odoo_multiple_product_images.field_product_image_category__color
 msgid "Color"
-msgstr "Farbe"
+msgstr "Couleur"
 
 #. module: odoo_multiple_product_images
 #: model:ir.model.fields,field_description:odoo_multiple_product_images.field_product_image_backend__create_uid
 #: model:ir.model.fields,field_description:odoo_multiple_product_images.field_product_image_category__create_uid
 msgid "Created by"
-msgstr "Erstellt von"
+msgstr "Créé par"
 
 #. module: odoo_multiple_product_images
 #: model:ir.model.fields,field_description:odoo_multiple_product_images.field_product_image_backend__create_date
 #: model:ir.model.fields,field_description:odoo_multiple_product_images.field_product_image_category__create_date
 msgid "Created on"
-msgstr "Erstellt am"
+msgstr "Créé le"
 
 #. module: odoo_multiple_product_images
 #: model:ir.model.fields,field_description:odoo_multiple_product_images.field_product_image_category__description
 msgid "Description"
-msgstr "Beschreibung"
+msgstr "Description"
 
 #. module: odoo_multiple_product_images
 #: model:ir.model.fields,field_description:odoo_multiple_product_images.field_product_image_backend__display_name
 #: model:ir.model.fields,field_description:odoo_multiple_product_images.field_product_image_category__display_name
 msgid "Display Name"
-msgstr "Anzeigename"
+msgstr "Nom affiché"
 
 #. module: odoo_multiple_product_images
 #: model:ir.model.fields,field_description:odoo_multiple_product_images.field_product_image_backend__filename
 msgid "Filename"
-msgstr "Dateiname"
+msgstr "Nom du fichier"
 
 #. module: odoo_multiple_product_images
 #: model:ir.model.fields,field_description:odoo_multiple_product_images.field_product_image_backend__id
@@ -90,13 +90,13 @@ msgstr "ID"
 #. module: odoo_multiple_product_images
 #: model:ir.model.fields,field_description:odoo_multiple_product_images.field_product_image_backend__image
 msgid "Image"
-msgstr "Bild"
+msgstr "Image"
 
 #. module: odoo_multiple_product_images
 #: model_terms:ir.ui.view,arch_db:odoo_multiple_product_images.full_product_image_backend_form_view
 #: model_terms:ir.ui.view,arch_db:odoo_multiple_product_images.product_image_backend_form_view
 msgid "Image Name"
-msgstr "Bildname"
+msgstr "Nom de l'image"
 
 #. module: odoo_multiple_product_images
 #: model:ir.model.fields,field_description:odoo_multiple_product_images.field_product_image_category__images_ids
@@ -105,75 +105,75 @@ msgstr "Bildname"
 #: model_terms:ir.ui.view,arch_db:odoo_multiple_product_images.product_product_image_backend_form_view
 #: model_terms:ir.ui.view,arch_db:odoo_multiple_product_images.product_template_image_backend_form_view
 msgid "Images"
-msgstr "Bilder"
+msgstr "Images"
 
 #. module: odoo_multiple_product_images
 #: model:ir.actions.act_window,name:odoo_multiple_product_images.product_backend_images_categories
 #: model:ir.ui.menu,name:odoo_multiple_product_images.menu_images
 msgid "Images Categories"
-msgstr "Bildkategorien"
+msgstr "Catégories d'images"
 
 #. module: odoo_multiple_product_images
 #: model:ir.model.fields,field_description:odoo_multiple_product_images.field_product_image_category__images_counter
 msgid "Images Count"
-msgstr "Bilder zählen"
+msgstr "Nombre d'images"
 
 #. module: odoo_multiple_product_images
 #: code:addons/odoo_multiple_product_images/models/product_image_backend.py:52
 #, python-format
 msgid "Images by Category"
-msgstr "Bilder nach Kategorie"
+msgstr "Images by Category"
 
 #. module: odoo_multiple_product_images
 #: model:ir.model.fields,field_description:odoo_multiple_product_images.field_product_image_backend____last_update
 #: model:ir.model.fields,field_description:odoo_multiple_product_images.field_product_image_category____last_update
 msgid "Last Modified on"
-msgstr "Zuletzt geändert am"
+msgstr "Dernière modification le"
 
 #. module: odoo_multiple_product_images
 #: model:ir.model.fields,field_description:odoo_multiple_product_images.field_product_image_backend__write_uid
 #: model:ir.model.fields,field_description:odoo_multiple_product_images.field_product_image_category__write_uid
 msgid "Last Updated by"
-msgstr "Zuletzt aktualisiert durch"
+msgstr "Dernière mise à jour par"
 
 #. module: odoo_multiple_product_images
 #: model:ir.model.fields,field_description:odoo_multiple_product_images.field_product_image_backend__write_date
 #: model:ir.model.fields,field_description:odoo_multiple_product_images.field_product_image_category__write_date
 msgid "Last Updated on"
-msgstr "Zuletzt aktualisiert am"
+msgstr "Dernière mise à jour le"
 
 #. module: odoo_multiple_product_images
 #: model:ir.model.fields,field_description:odoo_multiple_product_images.field_product_image_backend__image_medium
 msgid "Medium-sized image"
-msgstr "Mittelgroßes Bild"
+msgstr "Image de taille moyenne"
 
 #. module: odoo_multiple_product_images
 #: model:ir.model.fields,help:odoo_multiple_product_images.field_product_image_backend__image_medium
 msgid "Medium-sized image of the product. It is automatically resized as a 128x128px image, with aspect ratio preserved, only when the image exceeds one of those sizes. Use this field in form views or some kanban views."
-msgstr "Bild des Produkts in mittlerer Größe. Es wird automatisch auf 128x128px verkleinert, ohne Änderungen des Seitenverhältnis. Verwenden Sie dieses Feld in Formular oder Kanban Ansichten."
+msgstr "Image de taille moyenne de l'article. Elle sera automatiquement redimensionnée à 128 x 128 px, en préservent le rapport hauteur/largeur, si l'image dépasse une de ces dimensions. Utilisez ce champ dans les vues formulaire ou certaines vues kanban."
 
 #. module: odoo_multiple_product_images
 #: model:ir.model.fields,field_description:odoo_multiple_product_images.field_product_image_backend__name
 #: model:ir.model.fields,field_description:odoo_multiple_product_images.field_product_image_category__name
 #: model_terms:ir.ui.view,arch_db:odoo_multiple_product_images.product_cat_image_backend_form
 msgid "Name"
-msgstr "Name"
+msgstr "Nom"
 
 #. module: odoo_multiple_product_images
 #: model:ir.model.fields,field_description:odoo_multiple_product_images.field_product_image_backend__origin_id
 msgid "Origin"
-msgstr "Ursprungsland"
+msgstr "Pays d'origine"
 
 #. module: odoo_multiple_product_images
 #: model:ir.model,name:odoo_multiple_product_images.model_product_product
 #: model_terms:ir.ui.view,arch_db:odoo_multiple_product_images.full_product_image_backend_kanban_view
 msgid "Product"
-msgstr "Produkt"
+msgstr "Article"
 
 #. module: odoo_multiple_product_images
 #: model:ir.model,name:odoo_multiple_product_images.model_product_image_backend
 msgid "Product Image Backend"
-msgstr "Produktbild Backend"
+msgstr "Image du produit en arrière-plan"
 
 #. module: odoo_multiple_product_images
 #: model_terms:ir.ui.view,arch_db:odoo_multiple_product_images.full_product_image_backend_form_view
@@ -181,113 +181,113 @@ msgstr "Produktbild Backend"
 #: model_terms:ir.ui.view,arch_db:odoo_multiple_product_images.product_product_image_backend_form_view
 #: model_terms:ir.ui.view,arch_db:odoo_multiple_product_images.product_template_image_backend_form_view
 msgid "Product Images"
-msgstr "Produktbilder"
+msgstr "Images du produit"
 
 #. module: odoo_multiple_product_images
 #: model_terms:ir.ui.view,arch_db:odoo_multiple_product_images.product_cat_image_backend_form
 #: model_terms:ir.ui.view,arch_db:odoo_multiple_product_images.product_cat_image_backend_tree
 msgid "Product Images Category"
-msgstr "Produktbilder Kategorie"
+msgstr "Catégorie d'images de produits"
 
 #. module: odoo_multiple_product_images
 #: model:ir.model,name:odoo_multiple_product_images.model_product_template
 msgid "Product Template"
-msgstr "Produktvorlage"
+msgstr "Modèle d'article"
 
 #. module: odoo_multiple_product_images
 #: model_terms:ir.ui.view,arch_db:odoo_multiple_product_images.product_cat_image_backend_tree
 msgid "Product Templates"
-msgstr "Produktvorlagen"
+msgstr "Modèles de produits"
 
 #. module: odoo_multiple_product_images
 #: model_terms:ir.ui.view,arch_db:odoo_multiple_product_images.product_cat_image_backend_tree
 msgid "Product Variants"
-msgstr "Produktvarianten"
+msgstr "Variantes d'article"
 
 #. module: odoo_multiple_product_images
 #: model:ir.model.fields,field_description:odoo_multiple_product_images.field_product_image_category__products_counter
 msgid "Products Count"
-msgstr "Anzahl der Produkte"
+msgstr "Nombre de produits"
 
 #. module: odoo_multiple_product_images
 #: code:addons/odoo_multiple_product_images/models/product_image_backend.py:68
 #: code:addons/odoo_multiple_product_images/models/product_image_backend.py:84
 #, python-format
 msgid "Products by Category"
-msgstr "Produkte nach Kategorie"
+msgstr "Produits par catégorie"
 
 #. module: odoo_multiple_product_images
 #: model:ir.model.fields,field_description:odoo_multiple_product_images.field_product_image_backend__raw_image_size
 msgid "Raw Image Size"
-msgstr "Rohbildgröße"
+msgstr "Taille de l'image brute"
 
 #. module: odoo_multiple_product_images
 #: model:ir.model.fields,field_description:odoo_multiple_product_images.field_product_image_backend__product_id
 msgid "Related Product"
-msgstr "Ähnliches Produkt"
+msgstr "Produit lié"
 
 #. module: odoo_multiple_product_images
 #: model:ir.model.fields,field_description:odoo_multiple_product_images.field_product_image_backend__template_id
 msgid "Related Template"
-msgstr "Verwandte Vorlage"
+msgstr "Modèle connexe"
 
 #. module: odoo_multiple_product_images
 #: model_terms:ir.ui.view,arch_db:odoo_multiple_product_images.full_product_image_backend_form_view
 #: model_terms:ir.ui.view,arch_db:odoo_multiple_product_images.product_image_backend_form_view
 msgid "Set for Template"
-msgstr "Als Vorlage festlegen"
+msgstr "Set for Template"
 
 #. module: odoo_multiple_product_images
 #: model_terms:ir.ui.view,arch_db:odoo_multiple_product_images.full_product_image_backend_form_view
 #: model_terms:ir.ui.view,arch_db:odoo_multiple_product_images.product_image_backend_form_view
 msgid "Set for Variant"
-msgstr "Als Variante festlegen"
+msgstr "Set for Variant"
 
 #. module: odoo_multiple_product_images
 #: model:ir.model.fields,field_description:odoo_multiple_product_images.field_product_image_backend__image_small
 msgid "Small-sized image"
-msgstr "Miniaturbild"
+msgstr "Image de petite taille"
 
 #. module: odoo_multiple_product_images
 #: model:ir.model.fields,help:odoo_multiple_product_images.field_product_image_backend__image_small
 msgid "Small-sized image of the product. It is automatically resized as a 64x64px image, with aspect ratio preserved. Use this field anywhere a small image is required."
-msgstr "Kleines Bild für das Produkt. Es wird automatisch  auf 64x64px skaliert. Das Seitenverhältnis bleibt erhalten. Benutzen Sie dieses Feld überall, wo Sie es in dieser Größe benötigen können."
+msgstr "Vignette de l'article. Elle sera automatiquement redimensionnée à 64 x 64 px, en préservent le rapport hauteur/largeur. Utilisez ce champ partout où une petite image est nécessaire."
 
 #. module: odoo_multiple_product_images
 #: model:ir.model.fields,field_description:odoo_multiple_product_images.field_product_image_category__products_tmpl_counter
 msgid "Template Count"
-msgstr "Vorlage Anzahl"
+msgstr "Nombre de modèles"
 
 #. module: odoo_multiple_product_images
 #: model:ir.model.fields,field_description:odoo_multiple_product_images.field_product_product__template_image_backend_ids
 #: model:ir.model.fields,field_description:odoo_multiple_product_images.field_product_template__template_image_backend_ids
 msgid "Template Image Backend"
-msgstr "Vorlage Bild Backend"
+msgstr "Modèle d'image Backend"
 
 #. module: odoo_multiple_product_images
 #: model:ir.model.fields,field_description:odoo_multiple_product_images.field_product_product__related_template_image_backend_ids
 #: model_terms:ir.ui.view,arch_db:odoo_multiple_product_images.product_product_image_backend_form_view
 msgid "Template Images"
-msgstr "Vorlagenbilder"
+msgstr "Images du modèle"
 
 #. module: odoo_multiple_product_images
 #: code:addons/odoo_multiple_product_images/models/product_image_backend.py:46
 #, python-format
 msgid "This category name is already in use."
-msgstr "Dieser Kategoriename wird bereits verwendet."
+msgstr "Ce nom de catégorie est déjà utilisé."
 
 #. module: odoo_multiple_product_images
 #: model_terms:ir.ui.view,arch_db:odoo_multiple_product_images.product_cat_image_backend_tree
 msgid "Total Images"
-msgstr "Gesamtanzahl Bilder"
+msgstr "Total des images"
 
 #. module: odoo_multiple_product_images
 #: model:ir.model.fields,field_description:odoo_multiple_product_images.field_product_image_backend__trigger
 msgid "Trigger"
-msgstr "Auslöser"
+msgstr "Déclencheur"
 
 #. module: odoo_multiple_product_images
 #: model_terms:ir.ui.view,arch_db:odoo_multiple_product_images.product_product_image_backend_form_view
 msgid "Variant Images"
-msgstr "Variable Bilder"
+msgstr "Images de variantes"
 
