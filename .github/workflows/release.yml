@@ -2,9 +2,6 @@ name: Release
 
 on:
   push:
-    branches:
-      - master
-      - main
 
 jobs:
   release:
@@ -16,31 +13,22 @@ jobs:
 
       - uses: actions/setup-python@v2
         with:
-          python-version: '3.8'
-
-      - name: Fetch latest release
-        id: fetch_latest_release
-        uses: thebritican/fetch-latest-release@v2.0.0
-        continue-on-error: true
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          python-version: "3.8"
 
       - name: Compare current version with fetched latest release
         id: compare_versions
-        continue-on-error: true
-        env:
-          LATEST_RELEASE: ${{ steps.fetch_latest_release.outputs.tag_name }}
         run: |
-          url="https://gist.githubusercontent.com/os-ia/0e0aef0f3f0e929f5699a95d91ab1f0d/raw/check_manifest_version.py"
-          curl -sL $url | python3
+          wget https://gist.githubusercontent.com/os-ia/0e0aef0f3f0e929f5699a95d91ab1f0d/raw/check_manifest_version.py
+          python3 check_manifest_version.py ${{ secrets.GITHUB_TOKEN }}
+
       - name: Create Release
         id: create_release
-        uses: actions/create-release@v1
+        uses: softprops/action-gh-release@v1
         if: ${{ env.NEW_VERSION }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
+          name: ${{ env.NEW_VERSION }}
           tag_name: ${{ env.NEW_VERSION }}
-          release_name: ${{ env.NEW_VERSION }}
           draft: false
           prerelease: false
