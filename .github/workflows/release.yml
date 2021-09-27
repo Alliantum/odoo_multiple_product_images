@@ -15,20 +15,20 @@ jobs:
         with:
           python-version: "3.8"
 
-      - name: Compare current version with fetched latest release
-        id: compare_versions
-        run: |
-          wget https://gist.githubusercontent.com/os-ia/0e0aef0f3f0e929f5699a95d91ab1f0d/raw/check_manifest_version.py
-          python3 check_manifest_version.py ${{ secrets.GITHUB_TOKEN }}
+      - name: Compare current version with latest release
+        id: compare-odoo-version
+        uses: Alliantum/actions/compare-odoo-version@main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Create Release
         id: create_release
         uses: softprops/action-gh-release@v1
-        if: ${{ env.NEW_VERSION }}
+        if: ${{ steps.compare-odoo-version.outputs.new-version }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          name: ${{ env.NEW_VERSION }}
-          tag_name: ${{ env.NEW_VERSION }}
+          name: ${{ steps.compare-odoo-version.outputs.new-version }}
+          tag_name: ${{ steps.compare-odoo-version.outputs.new-version }}
           draft: false
           prerelease: false
