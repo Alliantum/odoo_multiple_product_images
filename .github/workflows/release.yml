@@ -17,7 +17,7 @@ jobs:
 
       - name: Compare current version with latest release
         id: compare-odoo-version
-        uses: Alliantum/actions/compare-odoo-version@main
+        uses: Alliantum/actions/compare-odoo-version@master
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
