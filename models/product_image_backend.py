@@ -36,7 +36,6 @@ class ProductImageCategory(models.Model):
             categ.products_counter = len(product_ids)
             categ.images_counter = len(categ.images_ids)
 
-    @api.multi
     @api.constrains('name')
     def _check_name(self):
         for category in self:
@@ -58,7 +57,6 @@ class ProductImageCategory(models.Model):
             return action
         return
 
-    @api.multi
     def show_products_category(self):
         self.ensure_one()
         if self.images_ids:
@@ -74,7 +72,6 @@ class ProductImageCategory(models.Model):
             return action
         return
 
-    @api.multi
     def show_templates_category(self):
         self.ensure_one()
         if self.images_ids:
@@ -131,7 +128,6 @@ class ProductImageBackend(models.Model):
                 backend_image.raw_image_size = len(base64.b64decode(backend_image.image)) // 1000
 
     # This method pretains to trigger and its just used as a lifecycle method, to get always trigger when the model is loaded.
-    @api.multi
     def get_trigger(self):
         if self.env.context.get('default_origin'):
             for image in self:
@@ -141,7 +137,6 @@ class ProductImageBackend(models.Model):
                     self.env.cr.execute(query, params)
 
     # This method gives the ability to switch an image between the actual product or the template
-    @api.multi
     def switch_image(self):
         self.ensure_one()
         if self.env.context.get('switch') and self.env.context['switch'] == 'to_template':
