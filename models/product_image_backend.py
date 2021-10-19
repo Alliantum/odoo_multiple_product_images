@@ -96,14 +96,22 @@ class ProductImageBackend(models.Model):
     _description = 'Product Image Backend'
 
     name = fields.Char('Name', required=True)
-    image = fields.Binary('Image', attachment=True)
-    image_medium = fields.Binary(
-        "Medium-sized image", attachment=True,
+    image = fields.Image('Image', attachment=True)
+    image_medium = fields.Image(
+        "Medium-sized image",
+        related='image',
+        max_width=386,
+        max_height=386,
+        store=True,
         help="Medium-sized image of the product. It is automatically "
              "resized as a 128x128px image, with aspect ratio preserved, "
              "only when the image exceeds one of those sizes. Use this field in form views or some kanban views.")
-    image_small = fields.Binary(
-        "Small-sized image", attachment=True,
+    image_small = fields.Image(
+        "Small-sized image",
+        related='image',
+        max_width=128,
+        max_height=128,
+        store=True,
         help="Small-sized image of the product. It is automatically "
              "resized as a 64x64px image, with aspect ratio preserved. "
              "Use this field anywhere a small image is required.")
@@ -114,27 +122,6 @@ class ProductImageBackend(models.Model):
     category_ids = fields.Many2many('product.image.category', string="Categories")
     trigger = fields.Boolean('Trigger', compute="get_trigger")
     origin_id = fields.Integer('Origin')
-
-    # The following two methods are overwritten and its purpose is to create a preview icon
-    @api.model_create_multi
-    def create(self, vals_list):
-        for vals in vals_list:
-            if vals.get('image'):
-                vals.update(image_get_resized_images(vals['image'],
-                                                     return_medium=True, return_small=True,
-                                                     avoid_resize_big=True, avoid_resize_medium=False,
-                                                     avoid_resize_small=False, sizes={'image_medium': (386, 386), 'image_small': (128, 128)}))
-        return super(ProductImageBackend, self).create(vals_list)
-
-    @api.multi
-    def write(self, vals):
-        if vals.get('image'):
-            vals.update(image_get_resized_images(vals['image'],
-                                                 return_medium=True, return_small=True,
-                                                 avoid_resize_big=True, avoid_resize_medium=False,
-                                                 avoid_resize_small=False,
-                                                 sizes={'image_medium': (386, 386), 'image_small': (128, 128)}))
-        return super(ProductImageBackend, self).write(vals)
 
     @api.depends('image')
     def _compute_raw_image_size(self):
