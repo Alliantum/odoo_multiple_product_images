@@ -297,9 +297,8 @@
         <field name="name">Images Categories</field>
         <field name="res_model">product.image.category</field>
         <field name="type">ir.actions.act_window</field>
-        <field name="view_type">form</field>
         <field name="view_mode">tree,form</field>
-        <field name="view_id" ref="product_cat_image_backend_tree" /> 
+        <field name="view_id" ref="product_cat_image_backend_tree" />
     </record>
 
     <!-- Declaring the Menu Items for Images and Images Categories -->

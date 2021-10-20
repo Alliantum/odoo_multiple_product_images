@@ -10,7 +10,7 @@
     'website': "https://www.alliantum.com/",
     'category': 'Inventory',
     'license': 'AGPL-3',
-    'version': '12.0.1.0.0',
+    'version': '13.0.1.0.0',
     'depends': ['product', 'stock', 'mrp'],
     'data': [
         'security/ir.model.access.csv',

@@ -92,8 +92,8 @@ class ProductImageBackend(models.Model):
     _name = 'product.image.backend'
     _description = 'Product Image Backend'
 
-    name = fields.Char('Name', required=True)
-    image = fields.Image('Image', attachment=True)
+    name = fields.Char(required=True)
+    image = fields.Image(store=True)
     image_medium = fields.Image(
         "Medium-sized image",
         related='image',
