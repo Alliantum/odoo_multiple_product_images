@@ -2,11 +2,7 @@
 
 from odoo import fields, models, api, _
 from odoo.exceptions import ValidationError
-from odoo.tools.image import image_get_resized_images
-import logging
 import base64
-
-_logger = logging.getLogger(__name__)
 
 
 
