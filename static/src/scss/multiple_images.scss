@@ -67,7 +67,7 @@
         border: none;
         background: none;
         margin: 0 0 $grid-gutter-width*0.2;
-        padding: $o-mail-attachment-margin;
+        padding: $o-attachment-margin;
         flex: 0 1 50%;
 
         @include media-breakpoint-up(md) {
