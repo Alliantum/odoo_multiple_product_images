@@ -45,7 +45,6 @@ class ProductImageCategory(models.Model):
             action = {
                 'type': 'ir.actions.act_window',
                 'name': _('Images by Category'),
-                'view_type': 'form',
                 'view_mode': 'kanban,tree,form',
                 'res_model': 'product.image.backend',
                 'domain': [('id', 'in', self.images_ids.ids)]
@@ -60,7 +59,6 @@ class ProductImageCategory(models.Model):
             action = {
                 'type': 'ir.actions.act_window',
                 'name': _('Products by Category'),
-                'view_type': 'form',
                 'view_mode': 'kanban,tree,form',
                 'res_model': 'product.product',
                 'domain': [('id', 'in', product_ids)]
@@ -75,7 +73,6 @@ class ProductImageCategory(models.Model):
             action = {
                 'type': 'ir.actions.act_window',
                 'name': _('Products by Category'),
-                'view_type': 'form',
                 'view_mode': 'kanban,tree,form',
                 'res_model': 'product.template',
                 'domain': [('id', 'in', template_ids)]
