@@ -157,7 +157,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:odoo_multiple_product_images.field_product_image_category__name
 #: model_terms:ir.ui.view,arch_db:odoo_multiple_product_images.product_cat_image_backend_form
 msgid "Name"
-msgstr "Pruduct name"
+msgstr ""
 
 #. module: odoo_multiple_product_images
 #: model:ir.model.fields,field_description:odoo_multiple_product_images.field_product_image_backend__origin_id
