@@ -134,14 +134,14 @@ class ProductImageBackend(models.Model):
         self.ensure_one()
         if self.env.context.get('switch') and self.env.context['switch'] == 'to_template':
             self.template_id = self.product_id.product_tmpl_id
-            self.product_id = ''
+            self.product_id = False
             return {
                 'type': 'ir.actions.act_view_reload',
             }
         elif self.env.context.get('switch') and self.env.context['switch'] == 'to_variant':
             variant_id = self.env['product.product'].browse(self.origin_id)
             self.product_id = variant_id
-            self.template_id = ''
+            self.template_id = False
             return {
                 'type': 'ir.actions.act_view_reload'
             }
