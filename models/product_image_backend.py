@@ -110,24 +110,21 @@ class ProductImageBackend(models.Model):
     product_id = fields.Many2one('product.product', 'Related Product', copy=True)
     template_id = fields.Many2one('product.template', 'Related Template', copy=True)
     category_ids = fields.Many2many('product.image.category', string="Categories")
-    trigger = fields.Boolean('Trigger', compute="get_trigger")
+    trigger = fields.Boolean('Trigger', compute="compute_trigger")
     origin_id = fields.Integer('Origin')
 
     @api.depends('image')
     def _compute_raw_image_size(self):
         for backend_image in self:
-            if backend_image.image:
-                # In Kb
-                backend_image.raw_image_size = len(base64.b64decode(backend_image.image)) // 1000
+            # In Kb
+            backend_image.raw_image_size = len(base64.b64decode(backend_image.image)) // 1000 if backend_image.image else 0
 
-    # This method pretains to trigger and its just used as a lifecycle method, to get always trigger when the model is loaded.
-    def get_trigger(self):
-        if self.env.context.get('default_origin'):
-            for image in self:
-                if image.id:
-                    query = """UPDATE product_image_backend SET origin_id = %s WHERE id = %s;"""
-                    params = (self.env.context.get('default_origin'), image.id)
-                    self.env.cr.execute(query, params)
+    # This method pretend to trigger and its just used as a lifecycle method, to get always trigger when the model is loaded.
+    def compute_trigger(self):
+        for image in self:
+            image.trigger = True
+            if self.env.context.get('default_origin') and image.id:
+                self.env.cr.execute("UPDATE product_image_backend SET origin_id = %s WHERE id = %s;", (self.env.context.get('default_origin'), image.id))
 
     # This method gives the ability to switch an image between the actual product or the template
     def switch_image(self):
