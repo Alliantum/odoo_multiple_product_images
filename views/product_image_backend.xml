@@ -94,7 +94,7 @@
         <field name="arch" type="xml">
             <xpath expr="//page[@name='sales']" position="after">
                 <page name="images" string="Images">
-                    <field name="template_image_backend_ids" string="Images" class="o_website_sale_image_list" context="{'default_template_id': active_id, 'at_template': True, 'form_view_ref':'odoo_multiple_product_images.product_image_backend_form_view'}" nolabel="1" options='{"no_open": True}'>
+                    <field name="template_image_backend_ids" string="Images" class="o_website_sale_image_list" context="{'default_template_id': active_id, 'at_template': True, 'form_view_ref': 'odoo_multiple_product_images.product_image_backend_form_view'}" nolabel="1" >
                         <kanban string="Product Images" class="o_attachments_previews">
                             <field name="id"/>
                             <field name="name"/>
@@ -130,36 +130,6 @@
                     </field>
                 </page>
             </xpath>
-        </field>
-    </record>
-
-    <!-- Image class FORM view -->
-    <record id="product_image_backend_form_view" model="ir.ui.view">
-        <field name="name">image.backend.form.view</field>
-        <field name="model">product.image.backend</field>
-        <field name="arch" type="xml">
-            <form string="Product Images">
-                <div class="row o_website_sale_image_modal">
-                    <div class="col-md-6 col-xl-5">
-                        <div class="oe_title">
-                            <label class="small text-muted" for="name" string="Image Name"/>
-                            <h2><field name="name" placeholder="Image Name" required="True"/></h2>
-                            <field name="product_id" invisible="1"/>
-                            <field name="template_id" invisible="1"/>
-                            <label for="category_ids" string="Categories"/><br/>
-                            <field name="category_ids"  widget="many2many_tags" />
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-xl-7 text-center o_website_sale_image_modal_container">
-                        <field name="image" widget="image" filename="filename" />
-                        <field name="filename" invisible="True"/>
-                        <br />
-                        <br />
-                        <button string="Set for Template" context="{'switch': 'to_template'}" type="object" name="switch_image" attrs="{'invisible': [('product_id', '=', False)]}" invisible="context.get('at_template', False)" class="btn-primary oe_edit_only" />
-                        <button string="Set for Variant" context="{'switch': 'to_variant'}" type="object" name="switch_image" attrs="{'invisible': [('template_id', '=', False)]}" invisible="context.get('at_template', False)" class="btn-primary oe_edit_only" />
-                    </div>
-                </div>
-            </form>
         </field>
     </record>
 
@@ -227,6 +197,36 @@
                         </div>
                     </div>
                 </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Image class FORM view -->
+    <record id="product_image_backend_form_view" model="ir.ui.view">
+        <field name="name">image.backend.form.view</field>
+        <field name="model">product.image.backend</field>
+        <field name="arch" type="xml">
+            <form string="Product Images">
+                <div class="row o_website_sale_image_modal">
+                    <div class="col-md-6 col-xl-5">
+                        <div class="oe_title">
+                            <label class="small text-muted" for="name" string="Image Name"/>
+                            <h2><field name="name" placeholder="Image Name" required="True"/></h2>
+                            <field name="product_id" invisible="1"/>
+                            <field name="template_id" invisible="1"/>
+                            <label for="category_ids" string="Categories"/><br/>
+                            <field name="category_ids"  widget="many2many_tags" />
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-7 text-center o_website_sale_image_modal_container">
+                        <field name="image" widget="image" filename="filename" />
+                        <field name="filename" invisible="True"/>
+                        <br />
+                        <br />
+                        <button string="Set for Template" context="{'switch': 'to_template'}" type="object" name="switch_image" attrs="{'invisible': [('product_id', '=', False)]}" invisible="context.get('at_template', False)" class="btn-primary oe_edit_only" />
+                        <button string="Set for Variant" context="{'switch': 'to_variant'}" type="object" name="switch_image" attrs="{'invisible': [('template_id', '=', False)]}" invisible="context.get('at_template', False)" class="btn-primary oe_edit_only" />
+                    </div>
+                </div>
             </form>
         </field>
     </record>
