@@ -1,19 +1,21 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
-#	* odoo_multiple_product_images
+# 	* odoo_multiple_product_images
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 12.0\n"
+"Project-Id-Version: Odoo Server 14.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-14 11:32+0000\n"
-"PO-Revision-Date: 2021-04-14 11:32+0000\n"
-"Last-Translator: <>\n"
+"POT-Creation-Date: 2022-03-31 16:01+0000\n"
+"PO-Revision-Date: 2022-03-31 17:03+0100\n"
+"Last-Translator: \n"
 "Language-Team: \n"
+"Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: \n"
+"Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: \n"
+"X-Generator: Poedit 3.0.1\n"
 
 #. module: odoo_multiple_product_images
 #: model_terms:ir.ui.view,arch_db:odoo_multiple_product_images.product_cat_image_backend_form
@@ -73,6 +75,8 @@ msgstr "Beschreibung"
 #. module: odoo_multiple_product_images
 #: model:ir.model.fields,field_description:odoo_multiple_product_images.field_product_image_backend__display_name
 #: model:ir.model.fields,field_description:odoo_multiple_product_images.field_product_image_category__display_name
+#: model:ir.model.fields,field_description:odoo_multiple_product_images.field_product_product__display_name
+#: model:ir.model.fields,field_description:odoo_multiple_product_images.field_product_template__display_name
 msgid "Display Name"
 msgstr "Anzeigename"
 
@@ -84,8 +88,10 @@ msgstr "Dateiname"
 #. module: odoo_multiple_product_images
 #: model:ir.model.fields,field_description:odoo_multiple_product_images.field_product_image_backend__id
 #: model:ir.model.fields,field_description:odoo_multiple_product_images.field_product_image_category__id
+#: model:ir.model.fields,field_description:odoo_multiple_product_images.field_product_product__id
+#: model:ir.model.fields,field_description:odoo_multiple_product_images.field_product_template__id
 msgid "ID"
-msgstr "ID"
+msgstr ""
 
 #. module: odoo_multiple_product_images
 #: model:ir.model.fields,field_description:odoo_multiple_product_images.field_product_image_backend__image
@@ -119,7 +125,7 @@ msgid "Images Count"
 msgstr "Bilder zählen"
 
 #. module: odoo_multiple_product_images
-#: code:addons/odoo_multiple_product_images/models/product_image_backend.py:52
+#: code:addons/odoo_multiple_product_images/models/product_image_backend.py:0
 #, python-format
 msgid "Images by Category"
 msgstr "Bilder nach Kategorie"
@@ -127,6 +133,8 @@ msgstr "Bilder nach Kategorie"
 #. module: odoo_multiple_product_images
 #: model:ir.model.fields,field_description:odoo_multiple_product_images.field_product_image_backend____last_update
 #: model:ir.model.fields,field_description:odoo_multiple_product_images.field_product_image_category____last_update
+#: model:ir.model.fields,field_description:odoo_multiple_product_images.field_product_product____last_update
+#: model:ir.model.fields,field_description:odoo_multiple_product_images.field_product_template____last_update
 msgid "Last Modified on"
 msgstr "Zuletzt geändert am"
 
@@ -149,8 +157,14 @@ msgstr "Mittelgroßes Bild"
 
 #. module: odoo_multiple_product_images
 #: model:ir.model.fields,help:odoo_multiple_product_images.field_product_image_backend__image_medium
-msgid "Medium-sized image of the product. It is automatically resized as a 128x128px image, with aspect ratio preserved, only when the image exceeds one of those sizes. Use this field in form views or some kanban views."
-msgstr "Bild des Produkts in mittlerer Größe. Es wird automatisch auf 128x128px verkleinert, ohne Änderungen des Seitenverhältnis. Verwenden Sie dieses Feld in Formular oder Kanban Ansichten."
+msgid ""
+"Medium-sized image of the product. It is automatically resized as a "
+"128x128px image, with aspect ratio preserved, only when the image exceeds "
+"one of those sizes. Use this field in form views or some kanban views."
+msgstr ""
+"Bild des Produkts in mittlerer Größe. Es wird automatisch auf 128x128px "
+"verkleinert, ohne Änderungen des Seitenverhältnis. Verwenden Sie dieses "
+"Feld in Formular oder Kanban Ansichten."
 
 #. module: odoo_multiple_product_images
 #: model:ir.model.fields,field_description:odoo_multiple_product_images.field_product_image_backend__name
@@ -210,8 +224,7 @@ msgid "Products Count"
 msgstr "Anzahl der Produkte"
 
 #. module: odoo_multiple_product_images
-#: code:addons/odoo_multiple_product_images/models/product_image_backend.py:68
-#: code:addons/odoo_multiple_product_images/models/product_image_backend.py:84
+#: code:addons/odoo_multiple_product_images/models/product_image_backend.py:0
 #, python-format
 msgid "Products by Category"
 msgstr "Produkte nach Kategorie"
@@ -250,8 +263,14 @@ msgstr "Miniaturbild"
 
 #. module: odoo_multiple_product_images
 #: model:ir.model.fields,help:odoo_multiple_product_images.field_product_image_backend__image_small
-msgid "Small-sized image of the product. It is automatically resized as a 64x64px image, with aspect ratio preserved. Use this field anywhere a small image is required."
-msgstr "Kleines Bild für das Produkt. Es wird automatisch  auf 64x64px skaliert. Das Seitenverhältnis bleibt erhalten. Benutzen Sie dieses Feld überall, wo Sie es in dieser Größe benötigen können."
+msgid ""
+"Small-sized image of the product. It is automatically resized as a 64x64px "
+"image, with aspect ratio preserved. Use this field anywhere a small image "
+"is required."
+msgstr ""
+"Kleines Bild für das Produkt. Es wird automatisch  auf 64x64px skaliert. "
+"Das Seitenverhältnis bleibt erhalten. Benutzen Sie dieses Feld überall, wo "
+"Sie es in dieser Größe benötigen können."
 
 #. module: odoo_multiple_product_images
 #: model:ir.model.fields,field_description:odoo_multiple_product_images.field_product_image_category__products_tmpl_counter
@@ -271,7 +290,7 @@ msgid "Template Images"
 msgstr "Vorlagenbilder"
 
 #. module: odoo_multiple_product_images
-#: code:addons/odoo_multiple_product_images/models/product_image_backend.py:46
+#: code:addons/odoo_multiple_product_images/models/product_image_backend.py:0
 #, python-format
 msgid "This category name is already in use."
 msgstr "Dieser Kategoriename wird bereits verwendet."
@@ -290,4 +309,3 @@ msgstr "Auslöser"
 #: model_terms:ir.ui.view,arch_db:odoo_multiple_product_images.product_product_image_backend_form_view
 msgid "Variant Images"
 msgstr "Variable Bilder"
-
