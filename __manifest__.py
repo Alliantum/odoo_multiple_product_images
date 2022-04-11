@@ -14,8 +14,9 @@
     'depends': ['product', 'stock', 'mrp'],
     'data': [
         'security/ir.model.access.csv',
-        'views/product_image_backend.xml',
-        'views/assets.xml',
         'data/clean_orphans_images.xml',
+        'views/assets.xml',
+        'views/product_image_backend.xml',
+        
     ]
 }

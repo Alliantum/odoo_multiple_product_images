@@ -132,19 +132,21 @@ class ProductImageBackend(models.Model):
         if self.env.context.get('switch') and self.env.context['switch'] == 'to_template':
             self.template_id = self.product_id.product_tmpl_id
             self.product_id = False
-            return {
-                'type': 'ir.actions.act_view_reload',
-            }
+            # return {
+            #     'type': 'ir.actions.client',
+            #     'tag': 'reload'
+            # }
         elif self.env.context.get('switch') and self.env.context['switch'] == 'to_variant':
             variant_id = self.env['product.product'].browse(self.origin_id)
             self.product_id = variant_id
             self.template_id = False
-            return {
-                'type': 'ir.actions.act_view_reload'
-            }
-        pass
+        return {
+            'type': 'ir.actions.client',
+            'tag': 'reload'
+        }
 
-    # This is just a trash collector, then delete it
+   
+   # This is just a trash collector, then delete it
     @api.model
     def clean_orphans_images(self):
         all_orphans_images = self.search([('template_id', '=', False), ('product_id', '=', False)])
