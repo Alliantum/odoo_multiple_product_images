@@ -32,3 +32,4 @@ jobs:
           tag_name: ${{ steps.compare-odoo-version.outputs.new-version }}
           draft: false
           prerelease: false
+          target_commitish: ${{ github.sha }}
