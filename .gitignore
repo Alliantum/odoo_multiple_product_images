@@ -1,0 +1,9 @@
+*.pyc
+__pycache__
+.DS_Store
+.venv
+.vscode
+.idea
+.mypy_cache
+.pytest_cache
+venv
