@@ -5,6 +5,10 @@ permissions:
 
 on:
   push:
+    branches:
+      - "12.0"
+      - "13.0"
+      - "14.0"
 
 jobs:
   release:
