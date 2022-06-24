@@ -11,8 +11,9 @@
                 <page name="images" string="Images">
                     <separator string="Variant Images"/>
                     <field name="product_image_backend_ids" class="o_website_sale_image_list" context="{'default_product_id': active_id, 'form_view_ref': 'odoo_multiple_product_images.product_image_backend_form_view'}" nolabel="1">
-                        <kanban string="Product Images" class="o_attachments_previews">
+                        <kanban string="Product Images" class="o_attachments_previews" default_order="sequence">
                             <field name="id"/>
+                            <field name="sequence" widget="handle"/>
                             <field name="name"/>
                             <field name="image_medium"/>
                             <field name="raw_image_size"/>
@@ -46,8 +47,9 @@
                     </field>
                     <separator string="Template Images"/>
                     <field name="related_template_image_backend_ids" class="o_website_sale_image_list" context="{'default_template_id': product_tmpl_id, 'default_origin': id, 'form_view_ref': 'odoo_multiple_product_images.product_image_backend_form_view'}" nolabel="1">
-                        <kanban string="Product Images" class="o_attachments_previews">
+                        <kanban string="Product Images" class="o_attachments_previews" default_order="sequence">
                             <field name="id"/>
+                            <field name="sequence" widget="handle"/>
                             <field name="name"/>
                             <field name="image_medium"/>
                             <field name="raw_image_size"/>
@@ -95,8 +97,9 @@
             <xpath expr="//page[@name='sales']" position="after">
                 <page name="images" string="Images">
                     <field name="template_image_backend_ids" string="Images" class="o_website_sale_image_list" context="{'default_template_id': active_id, 'at_template': True, 'form_view_ref': 'odoo_multiple_product_images.product_image_backend_form_view'}" nolabel="1" >
-                        <kanban string="Product Images" class="o_attachments_previews">
+                        <kanban string="Product Images" class="o_attachments_previews" default_order="sequence">
                             <field name="id"/>
+                            <field name="sequence" widget="handle"/>
                             <field name="name"/>
                             <field name="image_medium"/>
                             <field name="raw_image_size"/>
@@ -138,8 +141,9 @@
         <field name="name">image.backend.kanban.view</field>
         <field name="model">product.image.backend</field>
         <field name="arch" type="xml">
-            <kanban>
+            <kanban default_order="sequence">
                 <field name="id"/>
+                <field name="sequence" widget="handle"/>
                 <field name="name"/>
                 <field name="image"/>
                 <field name="image_small"/>

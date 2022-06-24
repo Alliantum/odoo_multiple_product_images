@@ -112,6 +112,7 @@ class ProductImageBackend(models.Model):
     category_ids = fields.Many2many('product.image.category', string="Categories")
     trigger = fields.Boolean('Trigger', compute="compute_trigger")
     origin_id = fields.Integer('Origin')
+    sequence = fields.Integer(default=10)
 
     @api.depends('image')
     def _compute_raw_image_size(self):
@@ -145,7 +146,7 @@ class ProductImageBackend(models.Model):
             'tag': 'reload'
         }
 
-   
+
    # This is just a trash collector, then delete it
     @api.model
     def clean_orphans_images(self):
