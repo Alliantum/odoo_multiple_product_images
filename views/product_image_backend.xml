@@ -189,7 +189,8 @@
                                 <field name="product_id" />
                                 <field name="template_id" />
                                 <field name="category_ids"  widget="many2many_tags" options="{'color_field': 'color', 'no_create_edit': True}"/>
-                        </group>
+                                <field name="sequence" />
+                            </group>
                         </div>
                         <div class="col-md-6 col-xl-7 text-center o_website_sale_image_modal_container">
                             <field name="image" widget="image" filename="filename" />
@@ -218,8 +219,10 @@
                             <h2><field name="name" placeholder="Image Name" required="True"/></h2>
                             <field name="product_id" invisible="1"/>
                             <field name="template_id" invisible="1"/>
-                            <label for="category_ids" string="Categories"/><br/>
-                            <field name="category_ids"  widget="many2many_tags" />
+                            <group>
+                                <field name="category_ids"  widget="many2many_tags"/>
+                                <field name="sequence" />
+                            </group>
                         </div>
                     </div>
                     <div class="col-md-6 col-xl-7 text-center o_website_sale_image_modal_container">
